@@ -1,0 +1,78 @@
+.image-wrapper{
+    height: 100px;
+    width:100px;
+    overflow: hidden;
+     border-radius: 100%;
+}
+
+.image-profile{
+    height: 100%;
+    width:100%;
+    border-radius: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.image-profile:hover{
+    transform: scale(1.5);
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+
+.profile-name{
+    position: relative
+}
+
+.image-wrapper--1{
+    height: 40px;
+    width:40px;
+    overflow: hidden;
+     border-radius: 100%;
+    
+}
+
+.show-name{
+    opacity: 0;
+    transition: 0.3s ease;
+    font-size: 12px;
+    position:absolute;
+    z-index:2;
+    top: 0;
+    left: 4px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 4px 12px;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.show-name::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 6px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 10px solid transparent;
+}
+
+.profile-name:hover .show-name{
+   opacity: 1;
+}
+
+
+

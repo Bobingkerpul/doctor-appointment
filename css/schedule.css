@@ -1,0 +1,85 @@
+.schedule{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.col-md-6.schedule.shadow.rounded.p-4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.col-md-6.schedule.shadow.rounded.p-4::before {
+    content: '';
+    display: block;
+    background: #003083;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+    transform: translate(36%, -90%);
+    opacity: 0;
+    transition: 0.2s linear;
+}
+.col-md-6.schedule.shadow.rounded.p-4:hover::before {
+    border-radius: 0%;
+    transform: translate(0%);
+    opacity: 1;
+}
+
+.col-md-6.schedule.shadow.rounded.p-4:hover h2,
+.col-md-6.schedule.shadow.rounded.p-4:hover h6 {
+    color: #fff;
+}
+.col-md-6.schedule.shadow.rounded.p-4:hover hr{
+    border: 1px solid #fff;
+}
+.col-md-6.schedule.shadow.rounded.p-4:hover button{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #003083;
+}
+
+.col-md-6.schedule.shadow.rounded.p-4 hr{
+     border: 1px solid #8E0D0D;
+     opacity: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+.apponum{
+    background: #003083;
+    color: #fff;
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.sessionhead{
+    background: #003083;
+    color: #fff;
+    padding: 16px 12px;
+    border-bottom: 4px solid #8E0D0D;
+}
+
+.sessiondet{
+    color: #8E0D0D;
+}
+
+
+.warning-icon {
+  animation: warning-icon 1s infinite ease-in-out alternate;
+}
+@keyframes warning-icon {
+    from {
+        transform: scale(0.8); 
+    }
+    to {
+        transform: scale(1.2); 
+    }
+}
